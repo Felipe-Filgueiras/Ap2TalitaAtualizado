@@ -91,7 +91,7 @@ public class FuncionarioDAO {
                 ResultSet rst = pstm.getResultSet();
 
                 while (rst.next()) {
-                    int idPessoa = rst.getString("id_pessoa");
+                    String idPessoa = rst.getString("id_pessoa");
                     String cargo = rst.getString("cargo");
                     String nome = rst.getString("nome");
                     String cpf = rst.getString("cpf");
